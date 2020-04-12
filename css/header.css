@@ -1,0 +1,28 @@
+section.nav {
+    position: fixed;
+    width: 100%;
+    min-width: 1024px;
+    height: 45px;
+    background-color: #333333;
+    color: #d8d8d8;
+    font-weight: 300;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 45px;
+    margin: 0 -10px;
+}
+
+header li i {
+    font-size: 20px;
+}
