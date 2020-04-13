@@ -1,8 +1,117 @@
-section.main {
+/* Common */
+.first__product .product__name,
+.second__product .product__name {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.first__product h4,
+.second__product h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.first__product p,
+.second__product p {
+    font-weight: 300;
+    color: #86868b;
+    margin-bottom: 25px;
+}
+
+/* First Main Product */
+section.main__first {
     width: 100%;
     height: 700px;
     background-image: url("https://www.apple.com/v/home/d/images/heroes/iphone-11-pro-spring/hero__dvsxv8smkkgi_mediumtall_2x.jpg");
     background-size: cover;
     background-position: center 80%;
     background-repeat: no-repeat;
+    padding-top: 45px;
+}
+
+.main__first .first__product {
+    width: 100%;
+    padding-top: 60px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Second Main Product */
+section.main__second {
+    background-color: #fafafa;
+    width: 100%;
+    height: 700px;
+    background-image: url("https://www.apple.com/v/home/d/images/heroes/iphone-11-spring/hero__dvsxv8smkkgi_large_2x.jpg");
+    background-size: 2618px 538px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.main__second .second__product {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Third Main Product */
+section.main__third {
+    background-color: #fafafa;
+    width: 100%;
+    height: 700px;
+    background-image: url("https://www.apple.com/v/home/d/images/heroes/ipad-pro/hero__dvsxv8smkkgi_large_2x.jpg");
+    background-size: 3010px 624px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__third::after {
+    content: "Magic Keyboard coming in May";
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    bottom: 3%;
+    left: 45%;
+    color: #86868b;
+}
+
+.main__third .third__product {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+}
+
+.third__product .product__name {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.third__product .product__name::before {
+    content: "New";
+    display: block;
+    font-size: 18px;
+    color: #bf4900;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.third__product h4 {
+    font-size: 28px;
+    margin-bottom: 25px;
 }
