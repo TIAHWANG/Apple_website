@@ -1,0 +1,79 @@
+/* Common */
+
+.contents {
+    width: 100%;
+    height: 580px;
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.contents .title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+section.collections {
+    width: 100%;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+}
+
+.collections > div {
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.collections__first {
+    background-image: url("https://www.apple.com/v/home/d/images/promos/brand-messaging/tile__cauwwcyyn9hy_large_2x.jpg");
+}
+
+.collections__second {
+    background-image: url("https://www.apple.com/v/home/d/images/promos/today-at-home/tile__cauwwcyyn9hy_large_2x.jpg");
+}
+
+.collections__third {
+    background-image: url("https://www.apple.com/v/home/d/images/promos/tv-plus-trolls-world-tour/tile__cauwwcyyn9hy_large_2x.jpg");
+}
+
+.collections__third .contents .contents__link {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+.collections__third .contents p {
+    font-size: 22px;
+}
+
+.collections__third .contents__link a {
+    color: #fff;
+}
+
+section div.collections__fourth,
+section div.collections__sixth {
+    background-color: #fafafa;
+}
+
+section .collections__fourth {
+    background-image: url("https://www.apple.com/v/home/d/images/promos/apple-books-sesame-street/tile__cauwwcyyn9hy_large_2x.jpg");
+    background-size: 626px 348px;
+    background-position: bottom;
+}
+
+.collections__fifth {
+    background-color: #105dab;
+}
+
+section .collections__sixth {
+    background-image: url("https://www.apple.com/v/home/d/images/promos/macbook-air-updated/tile__cauwwcyyn9hy_large_2x.jpg");
+    background-size: 432px 336px;
+    background-position: bottom;
+}

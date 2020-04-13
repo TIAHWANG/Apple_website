@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "header.css";
 @import "main.css";
+@import "collections.css";
 
 * {
     box-sizing: border-box;
@@ -13,7 +14,6 @@ body {
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 17px;
     font-weight: 300;
-    position: relative;
 }
 
 section {
@@ -33,6 +33,12 @@ a {
     font-weight: 400;
 }
 
+a.small {
+    font-size: 17px;
+    color: #2997ff;
+    margin-top: 5px;
+}
+
 a:last-child {
     margin-left: 25px;
 }
@@ -42,6 +48,15 @@ a::after {
     font-weight: 900;
     content: "\f054";
     font-size: 15px;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+a.small::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f144";
+    font-size: 17px;
     padding-left: 8px;
     text-decoration: none;
 }
