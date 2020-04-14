@@ -33,13 +33,13 @@ a {
     font-weight: 400;
 }
 
-a.small {
+a.small,
+a.small-arrow {
     font-size: 17px;
     color: #2997ff;
-    margin-top: 5px;
 }
 
-a:last-child {
+a.big {
     margin-left: 25px;
 }
 
@@ -61,8 +61,7 @@ a.small::after {
     text-decoration: none;
 }
 
-a:hover::after,
-a:visited::after {
+a:hover::after {
     text-decoration: none;
 }
 

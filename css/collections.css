@@ -1,19 +1,3 @@
-/* Common */
-
-.contents {
-    width: 100%;
-    height: 580px;
-    padding-top: 50px;
-    text-align: center;
-    position: relative;
-}
-
-.contents .title {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.5;
-}
-
 section.collections {
     width: 100%;
     padding: 0px 10px;
@@ -31,6 +15,8 @@ section.collections {
     background-repeat: no-repeat;
 }
 
+/* background images */
+
 .collections__first {
     background-image: url("https://www.apple.com/v/home/d/images/promos/brand-messaging/tile__cauwwcyyn9hy_large_2x.jpg");
 }
@@ -40,26 +26,7 @@ section.collections {
 }
 
 .collections__third {
-    background-image: url("https://www.apple.com/v/home/d/images/promos/tv-plus-trolls-world-tour/tile__cauwwcyyn9hy_large_2x.jpg");
-}
-
-.collections__third .contents .contents__link {
-    position: absolute;
-    bottom: 10%;
-    left: 40%;
-}
-
-.collections__third .contents p {
-    font-size: 22px;
-}
-
-.collections__third .contents__link a {
-    color: #fff;
-}
-
-section div.collections__fourth,
-section div.collections__sixth {
-    background-color: #fafafa;
+    background-image: url("https://www.apple.com/v/home/d/images/promos/tv-plus-helpsters/tile__cauwwcyyn9hy_large_2x.jpg");
 }
 
 section .collections__fourth {
@@ -68,12 +35,132 @@ section .collections__fourth {
     background-position: bottom;
 }
 
-.collections__fifth {
-    background-color: #105dab;
-}
-
 section .collections__sixth {
     background-image: url("https://www.apple.com/v/home/d/images/promos/macbook-air-updated/tile__cauwwcyyn9hy_large_2x.jpg");
     background-size: 432px 336px;
     background-position: bottom;
+}
+
+/* Each collection */
+
+.contents {
+    width: 100%;
+    height: 580px;
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.contents .title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.contents .contents__link {
+    margin-top: 8px;
+}
+
+.collections__second .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.collections__second .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.collections__second .gradient__box {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.collections__second .box__text {
+    background: linear-gradient(
+        to right,
+        #ed4404 30%,
+        #f28303 50%,
+        #f39501 60%,
+        #f5b200 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.collections__third .contents .contents__link {
+    position: absolute;
+    bottom: 10%;
+    left: 33%;
+}
+
+.collections__third .contents__link a,
+.collections__fifth .contents__link a {
+    color: #fff;
+}
+
+.collections__third .contents i,
+.collections__fourth .contents i {
+    margin-right: 10px;
+}
+
+.collections__fourth .contents p,
+.collections__sixth .contents p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+section div.collections__fourth,
+section div.collections__sixth {
+    background-color: #fafafa;
+}
+
+.collections__fourth .contents,
+.collections__sixth .contents {
+    color: black;
+}
+
+.collections__fifth {
+    background-color: #105dab;
+}
+
+.collections__fifth .contents {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collections__fifth img {
+    width: 191px;
+    height: 88px;
+    margin-bottom: 30px;
+}
+
+.collections__fifth .contents .contents__link {
+    margin-top: 20px;
+}
+
+.collections__fifth .contents__link a:last-child,
+.collections__sixth .contents__link a:last-child {
+    margin-left: 25px;
+}
+
+.collections__sixth .title::before {
+    content: "New";
+    display: block;
+    font-size: 18px;
+    color: #bf4900;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.collections__sixth p.price {
+    font-size: 14px;
+    font-weight: 300;
+    color: #86868b;
 }
