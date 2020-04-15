@@ -3,6 +3,7 @@
 @import "header.css";
 @import "main.css";
 @import "collections.css";
+@import "footer.css";
 
 * {
     box-sizing: border-box;

@@ -1,4 +1,4 @@
-section.nav {
+section.header {
     position: fixed;
     width: 100%;
     min-width: 1024px;
@@ -6,6 +6,7 @@ section.nav {
     background-color: #333333;
     color: #d8d8d8;
     font-weight: 300;
+    z-index: 9999;
 }
 
 header {
