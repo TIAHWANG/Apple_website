@@ -40,6 +40,10 @@ a.small-arrow {
     color: #2997ff;
 }
 
+a.footerLink {
+    font-size: 12px;
+}
+
 a.big {
     margin-left: 25px;
 }
@@ -62,10 +66,16 @@ a.small::after {
     text-decoration: none;
 }
 
+a.footerLink::after {
+    content: "";
+    padding-left: 0;
+}
+
 a:hover::after {
     text-decoration: none;
 }
 
-a:hover span {
+a:hover span,
+a.footerLink:hover {
     text-decoration: underline;
 }

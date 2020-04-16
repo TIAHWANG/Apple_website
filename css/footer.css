@@ -16,23 +16,35 @@ section.footer {
     border-bottom: 1px solid #d2d2d7;
 }
 
-.explanations p {
+.explanations p:not(:last-child) {
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
 /* nav */
 .footer .nav {
-    padding: 20px 0;
+    padding-bottom: 20px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
 .nav > div {
-    background-color: black;
-    height: 100px;
     margin-right: 5px;
+}
+
+.nav .nav__title {
+    color: #1c1c1f;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.nav ul {
+    padding: 10px 0;
+}
+
+.nav ul li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 /* etc */
